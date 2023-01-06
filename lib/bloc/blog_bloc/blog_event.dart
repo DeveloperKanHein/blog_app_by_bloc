@@ -10,3 +10,9 @@ class GetBlogList extends BlogEvent
 {
   //
 }
+
+class AddBlog extends BlogEvent
+{
+  final Blog blog;
+  AddBlog({ required this.blog });
+}

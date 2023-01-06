@@ -12,4 +12,9 @@ abstract class Repositories
 
   @GET(ApiRoutes.blog)
   Future<List<Blog>> getBlog();
+
+  @POST(ApiRoutes.blog)
+  Future<dynamic> createBlog(
+      @Body() Blog blog
+      );
 }

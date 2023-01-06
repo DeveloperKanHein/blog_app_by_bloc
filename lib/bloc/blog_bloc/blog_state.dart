@@ -6,6 +6,11 @@ abstract class BlogState extends Equatable
   List<Object> get props => [];
 }
 
+class BlogInitialState extends BlogState
+{
+  //
+}
+
 class BlogLoading extends BlogState
 {
   //
@@ -18,6 +23,16 @@ class BlogSuccess extends BlogState
 }
 
 class BlogEmpty extends BlogState
+{
+  //
+}
+
+class BlogUploading extends BlogState
+{
+  //
+}
+
+class BlogUploaded extends BlogState
 {
   //
 }
